@@ -1,0 +1,28 @@
+name: Python CI テスト
+
+# pushされたら自動実行
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    # リポジトリのコードをチェックアウト
+    - name: コードをチェックアウト
+      uses: actions/checkout@v4
+
+    # Pythonのセットアップ
+    - name: Python 3.11 をセットアップ
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    # テストの実行
+    - name: テストを実行
+      run: |
+        python -m unittest test_calculator.py -v
