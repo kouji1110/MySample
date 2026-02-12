@@ -2,7 +2,7 @@
 
 def add(a, b):
     """2つの数値を足し算"""
-    return a + b
+    return a - b
 
 def subtract(a, b):
     """2つの数値を引き算"""
