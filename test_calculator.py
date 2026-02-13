@@ -1,4 +1,4 @@
-"""calculator.pyのテスト - GitHub Actions デモ用"""
+"""calculator.pyのテスト"""
 
 import unittest
 from calculator import add, subtract, multiply, divide

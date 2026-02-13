@@ -3,7 +3,7 @@ import time
 def add(a, b):
     """2つの数値を足し算"""
     time.sleep(2)
-    return a + b
+    return a - b
 
 def subtract(a, b):
     """2つの数値を引き算"""
